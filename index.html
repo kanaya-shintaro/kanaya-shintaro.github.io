@@ -165,19 +165,20 @@
     .work-row .watch{ width:fit-content; }
   }
 
-  .short-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:22px; }
+  .short-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:22px; }
   .short-card{
     background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden;
     box-shadow:var(--shadow); display:flex; flex-direction:column;
   }
-  .short-thumb{ aspect-ratio:9/16; max-height:340px; background:var(--line); }
+  .short-thumb{ width:100%; aspect-ratio:9/16; overflow:hidden; background:var(--line); }
   .short-thumb img{ width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
   .short-body{ padding:16px 18px 18px; display:flex; flex-direction:column; gap:8px; flex:1; }
   .short-body h3{ font-size:16px; margin:0; font-weight:700; }
   .short-body p{ margin:0; font-size:13px; color:var(--ink-soft); flex:1; }
   .short-body .watch{ align-self:flex-start; }
   @media (max-width:560px){
-    .short-grid{ grid-template-columns:1fr; }
+    .short-grid{ grid-template-columns:repeat(2,1fr); gap:14px; }
+    .short-body{ padding:12px 12px 14px; }
   }
 
   /* ---- contact ---- */
