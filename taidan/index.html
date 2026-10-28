@@ -1,0 +1,285 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SHINTARO KANAYA｜対談・インタビュー動画編集</title>
+<meta name="robots" content="noindex">
+<meta property="og:title" content="SHINTARO KANAYA｜対談・インタビュー動画編集">
+<meta property="og:description" content="金谷慎太郎の動画編集ポートフォリオ">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>img{max-width:100%}</style>
+<style>
+  :root{
+    --paper:#f5f2ea;
+    --card:#ffffff;
+    --ink:#181a1e;
+    --ink-soft:#5c5f63;
+    --line:#e2dbcb;
+    --accent:#d9622b;
+    --accent-ink:#7a3413;
+    --accent-soft:#f6e2d1;
+    --teal:#2c5b5b;
+    --teal-soft:#dfe9e6;
+    --shadow:0 1px 2px rgba(24,26,30,.05), 0 14px 30px -18px rgba(24,26,30,.28);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#141414;
+      --card:#1d1d1d;
+      --ink:#f2ede2;
+      --ink-soft:#a8a49a;
+      --line:#333029;
+      --accent:#ef7a3c;
+      --accent-ink:#f6b98c;
+      --accent-soft:#3a2617;
+      --teal:#6fa6a2;
+      --teal-soft:#1f2c2a;
+      --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 34px -18px rgba(0,0,0,.6);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#141414;
+    --card:#1d1d1d;
+    --ink:#f2ede2;
+    --ink-soft:#a8a49a;
+    --line:#333029;
+    --accent:#ef7a3c;
+    --accent-ink:#f6b98c;
+    --accent-soft:#3a2617;
+    --teal:#6fa6a2;
+    --teal-soft:#1f2c2a;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 14px 34px -18px rgba(0,0,0,.6);
+  }
+
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:"Zen Kaku Gothic New","Hiragino Sans",sans-serif;
+    line-height:1.75; -webkit-font-smoothing:antialiased;
+  }
+  .display{ font-family:"Shippori Antique B1", sans-serif; text-wrap:balance; letter-spacing:.01em; }
+  .mono{ font-family:"JetBrains Mono", monospace; font-variant-numeric:tabular-nums; }
+  a{ color:inherit; }
+
+  .wrap{ max-width:980px; margin:0 auto; padding:0 24px; }
+
+  /* ---- timeline ruler motif ---- */
+  .ruler{
+    height:28px; display:flex; align-items:flex-end; gap:0;
+    border-bottom:1px solid var(--line); margin-bottom:0;
+  }
+  .ruler span{ flex:1; border-left:1px solid var(--line); height:8px; }
+  .ruler span:nth-child(4n+1){ height:16px; }
+
+  /* ---- header ---- */
+  header.hero{ padding:56px 0 48px; display:flex; align-items:center; justify-content:space-between; gap:48px; flex-wrap:wrap; }
+  .hero-text{ flex:1 1 480px; }
+  .hero-photo{
+    width:280px; height:280px; flex:none; border-radius:28px; overflow:hidden;
+    box-shadow:var(--shadow);
+  }
+  .hero-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .kicker{
+    display:flex; align-items:center; gap:10px; margin-bottom:22px;
+    font-size:12px; letter-spacing:.14em; color:var(--accent-ink); text-transform:uppercase;
+  }
+  .kicker .dot{ width:7px; height:7px; border-radius:50%; background:var(--accent); }
+  h1.name{ font-size:clamp(40px,7vw,68px); margin:0 0 14px; font-weight:400; line-height:1.05; }
+  .name-kana{
+    display:block; font-family:"Zen Kaku Gothic New",sans-serif; font-size:14px; font-weight:500;
+    color:var(--ink-soft); letter-spacing:.1em; margin-top:8px;
+  }
+  .role{ font-size:clamp(15px,2vw,18px); color:var(--ink-soft); max-width:56ch; margin:0 0 28px; }
+  .hero-actions{ display:flex; gap:12px; flex-wrap:wrap; }
+  @media (max-width:760px){
+    header.hero{ flex-direction:column-reverse; gap:28px; }
+    .hero-photo{ width:180px; height:180px; align-self:flex-start; }
+  }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; padding:11px 22px; border-radius:3px;
+    font-size:14px; font-weight:700; text-decoration:none; transition:.15s;
+  }
+  .btn-primary{ background:var(--ink); color:var(--paper); }
+  .btn-primary:hover{ background:var(--accent); }
+  .btn-ghost{ border:1px solid var(--line); color:var(--ink); }
+  .btn-ghost:hover{ border-color:var(--ink); }
+
+  /* ---- section shell ---- */
+  section{ padding:56px 0; border-top:1px solid var(--line); }
+  .sec-head{ display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:32px; flex-wrap:wrap; }
+  .sec-num{ font-size:12px; color:var(--ink-soft); letter-spacing:.1em; }
+  h2.sec-title{ font-size:clamp(24px,3.4vw,32px); font-weight:400; margin:2px 0 0; }
+
+  /* ---- about ---- */
+  .about-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:44px; align-items:start; }
+  .about-grid > *{ min-width:0; }
+  .about-text p{ color:var(--ink-soft); font-size:15.5px; }
+  .about-text p + p{ margin-top:14px; }
+  .focus-list{ display:flex; flex-direction:column; gap:16px; }
+  .focus-item{
+    background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 18px;
+    box-shadow:var(--shadow);
+  }
+  .focus-item .f-label{ font-size:12px; color:var(--accent-ink); font-weight:700; letter-spacing:.06em; }
+  .focus-item .f-body{ font-size:14px; color:var(--ink-soft); margin-top:4px; }
+  @media (max-width:700px){ .about-grid{ grid-template-columns:1fr; } }
+
+  /* ---- works ---- */
+  .work-group + .work-group{ margin-top:44px; }
+  .group-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:18px; }
+  .group-head .g-tag{
+    font-size:11px; font-weight:700; letter-spacing:.05em; padding:3px 10px; border-radius:999px;
+  }
+  .g-tag-biz{ background:var(--teal-soft); color:var(--teal); }
+  .g-tag-short{ background:var(--accent-soft); color:var(--accent-ink); }
+  .group-head h3{ font-size:19px; font-weight:700; margin:0; font-family:"Zen Kaku Gothic New",sans-serif; }
+
+  .work-row{
+    display:grid; grid-template-columns:180px 1fr auto; align-items:center; gap:22px;
+    padding:20px 4px; border-top:1px solid var(--line);
+  }
+  .work-row:first-child{ border-top:none; }
+  .thumb{
+    width:100%; aspect-ratio:16/9; border-radius:6px; overflow:hidden; background:var(--line);
+    box-shadow:var(--shadow);
+  }
+  .thumb img{ width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
+  .thumb.no-image{
+    display:flex; align-items:center; justify-content:center;
+    background:linear-gradient(135deg, var(--teal-soft), var(--accent-soft));
+  }
+  .thumb.no-image svg{ width:28px; height:28px; fill:var(--ink-soft); opacity:.6; }
+  .work-main h3{ font-size:17px; margin:0 0 6px; font-weight:700; font-family:"Zen Kaku Gothic New",sans-serif; }
+  .work-main p{ margin:0; font-size:13.5px; color:var(--ink-soft); }
+  .watch{
+    display:inline-flex; align-items:center; gap:8px; padding:9px 18px; border:none;
+    border-radius:999px; font-family:"Zen Kaku Gothic New",sans-serif; font-size:14px; font-weight:700;
+    text-decoration:none; white-space:nowrap; transition:.15s;
+    background:var(--ink); color:var(--paper);
+  }
+  .watch:hover{ background:var(--accent); color:var(--paper); }
+  .watch svg{ width:11px; height:11px; fill:currentColor; }
+  @media (max-width:600px){
+    .work-row{ grid-template-columns:1fr; gap:12px; }
+    .work-row .watch{ width:fit-content; }
+  }
+
+  .short-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:22px; }
+  .short-card{
+    background:var(--card); border:1px solid var(--line); border-radius:10px; overflow:hidden;
+    box-shadow:var(--shadow); display:flex; flex-direction:column;
+  }
+  .short-thumb{ aspect-ratio:9/16; max-height:340px; background:var(--line); }
+  .short-thumb img{ width:100%; height:100%; object-fit:cover; object-position:center; display:block; }
+  .short-body{ padding:16px 18px 18px; display:flex; flex-direction:column; gap:8px; flex:1; }
+  .short-body h3{ font-size:16px; margin:0; font-weight:700; }
+  .short-body p{ margin:0; font-size:13px; color:var(--ink-soft); flex:1; }
+  .short-body .watch{ align-self:flex-start; }
+  @media (max-width:560px){
+    .short-grid{ grid-template-columns:1fr; }
+  }
+
+  /* ---- contact ---- */
+  .contact-card{
+    background:var(--ink); color:var(--paper); border-radius:12px; padding:40px 36px;
+    display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap;
+  }
+  .contact-card h2{ font-size:clamp(22px,3vw,28px); font-weight:400; margin:0 0 8px; }
+  .contact-card p{ color:#c9c4b6; font-size:14px; max-width:42ch; margin:0; }
+  .contact-info{ display:flex; flex-direction:column; gap:10px; align-items:flex-start; }
+  .contact-info .c-row{ display:flex; align-items:center; gap:10px; font-size:15px; }
+  .contact-info .c-label{ font-size:11px; color:#918c7d; letter-spacing:.08em; text-transform:uppercase; width:52px; }
+  .c-value{
+    color:var(--paper); font-family:"JetBrains Mono",monospace; font-size:15px;
+    text-decoration:none; border-bottom:1px solid rgba(245,242,234,.35); transition:.15s;
+  }
+  .c-value:hover{ color:var(--accent); border-color:var(--accent); }
+
+  footer{ padding:28px 0 48px; font-size:12px; color:var(--ink-soft); display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; }
+
+  @media (max-width:700px){
+    .contact-card{ flex-direction:column; }
+  }
+</style>
+</head><body>
+<div class="ruler" id="ruler"></div>
+<script>document.getElementById('ruler').append(...Array.from({length:48}, ()=>document.createElement('span')));</script>
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-text">
+      <div class="kicker"><span class="dot"></span>VIDEO EDITOR — TALK &amp; INTERVIEW</div>
+      <h1 class="name display">金谷慎太郎<span class="name-kana">カナヤ シンタロウ</span></h1>
+      <p class="role">経営者対談・インタビュー・トーク番組の編集を得意としています。長い会話の中から伝えたい論点を整理し、最後まで見てもらえる構成に仕上げます。</p>
+      <div class="hero-actions"><a href="#works" class="btn btn-primary">実績を見る</a><a href="#contact" class="btn btn-ghost">相談する</a></div>
+    </div>
+    <div class="hero-photo"><img src="../shots/profile.jpg" alt="金谷慎太郎"></div>
+  </header>
+  <section id="works">
+    <div class="sec-head"><div><div class="sec-num mono">00 / WORKS</div><h2 class="sec-title display">編集実績</h2></div></div>
+    <div class="work-group">
+      <div class="group-head"><span class="g-tag g-tag-biz">BUSINESS</span><h3>対談・トーク動画</h3></div>
+      <div class="work-row">
+        <div class="thumb"><img src="../shots/W516rbCiG94.jpg" alt="【Rectas】経営者対談（林社長×前梶様）"></div>
+        <div class="work-main"><h3>【Rectas】経営者対談（林社長×前梶様）</h3><p>経営者同士の対談動画の編集。話している論点を画面上部のテロップで示し、要所はキャッチコピーで強調。長尺でも話の流れを追いやすい構成に仕上げた一本</p></div>
+        <a class="watch" href="https://youtu.be/W516rbCiG94" target="_blank" rel="noopener"><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg>動画を見る</a>
+      </div>
+      <div class="work-row">
+        <div class="thumb"><img src="../shots/HjFeFk_eCYY.jpg" alt="ADHDと向き合う暮らしの工夫"></div>
+        <div class="work-main"><h3>ADHDと向き合う暮らしの工夫</h3><p>ADHDをテーマにしたトーク番組の編集。40分超の長尺トークをテロップで要点整理し、飽きさせない構成に仕上げた一本</p></div>
+        <a class="watch" href="https://youtu.be/HjFeFk_eCYY" target="_blank" rel="noopener"><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg>動画を見る</a>
+      </div>
+    </div>
+    <div class="work-group">
+      <div class="group-head"><span class="g-tag g-tag-biz">BUSINESS</span><h3>ビジネス系横動画</h3></div>
+      <div class="work-row">
+        <div class="thumb"><img src="../shots/v8OXrDjFxko.jpg" alt="Google×SNS広告完全攻略 — 美容クリニックが売れる広告の作り方"></div>
+        <div class="work-main"><h3>Google×SNS広告完全攻略 — 美容クリニックが売れる広告の作り方</h3><p>広告運用ノウハウを解説するビジネス系横動画。情報量の多い内容を飽きさせずに見せる構成・テロップ設計を担当</p></div>
+        <a class="watch" href="https://youtu.be/v8OXrDjFxko" target="_blank" rel="noopener"><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg>動画を見る</a>
+      </div>
+      <div class="work-row">
+        <div class="thumb"><img src="../shots/AHlaBcp6AHg.jpg" alt="新社会人に必須なスキル"></div>
+        <div class="work-main"><h3>新社会人に必須なスキル</h3><p>新社会人・若手向けの教育系コンテンツ。複数回の初稿修正を経て要点が伝わるテンポに仕上げた一本</p></div>
+        <a class="watch" href="https://youtu.be/AHlaBcp6AHg" target="_blank" rel="noopener"><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg>動画を見る</a>
+      </div>
+    </div>
+    <div class="work-group">
+      <div class="group-head"><span class="g-tag g-tag-short">SHORT</span><h3>ショート実績（対談からの切り抜きにも対応）</h3></div>
+      <div class="short-grid">
+        <div class="short-card">
+          <div class="short-thumb"><img src="../shots/i6CEsQbWdsY.jpg" alt="ストーリー訴求ショート"></div>
+          <div class="short-body"><h3>ストーリー訴求ショート</h3><p>「3年も繰り返した」という強いフックから始まる、共感・気づきを促すストーリー型ショート。冒頭で惹きつけて最後まで見せる編集</p>
+            <a class="watch" href="https://youtube.com/shorts/i6CEsQbWdsY" target="_blank" rel="noopener"><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg>動画を見る</a></div>
+        </div>
+        <div class="short-card">
+          <div class="short-thumb"><img src="../shots/Vzjr_-GQcQU.jpg" alt="ショート実績"></div>
+          <div class="short-body"><h3>ショート実績</h3><p>テロップ・効果音・カット割りで視聴維持率を意識したショート動画編集の一例</p>
+            <a class="watch" href="https://youtube.com/shorts/Vzjr_-GQcQU" target="_blank" rel="noopener"><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg>動画を見る</a></div>
+        </div>
+        <div class="short-card">
+          <div class="short-thumb"><img src="../shots/CpJvkyT9lNA.jpg" alt="エンタメ系ショート編集"></div>
+          <div class="short-body"><h3>エンタメ系ショート編集</h3><p>テンポと間で魅せる縦型ショート動画。冒頭数秒で惹きつける構成を意識した編集</p>
+            <a class="watch" href="https://youtube.com/shorts/CpJvkyT9lNA" target="_blank" rel="noopener"><svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z"/></svg>動画を見る</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="sec-head"><div><div class="sec-num mono">01 / ABOUT</div><h2 class="sec-title display">自己紹介</h2></div></div>
+    <div class="about-grid">
+      <div class="about-text"><p>対談やインタビューは、話し手の魅力が伝わる一方で、長さや話の脱線で離脱されやすい形式です。論点の見出しテロップ、要点のキャッチ、テンポの調整で、視聴者が「今何の話をしているか」を見失わない編集を心がけています。</p><p>本編の編集に加えて、対談の中の印象的な場面を切り出したショート動画の制作にも対応しています。初稿を出して終わりにせず、意図のすり合わせを重ねながら仕上げていくスタイルです。</p></div>
+      <div class="focus-list"><div class="focus-item"><div class="f-label">TALK / INTERVIEW</div><div class="f-body">経営者対談・インタビュー・トーク番組の編集</div></div>
+<div class="focus-item"><div class="f-label">CLIP</div><div class="f-body">対談からの切り抜きショート制作</div></div>
+<div class="focus-item"><div class="f-label">WORKFLOW</div><div class="f-body">複数回のフィードバックに対応</div></div></div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="sec-head"><div><div class="sec-num mono">02 / CONTACT</div><h2 class="sec-title display">お問い合わせ</h2></div></div>
+    <div class="contact-card">
+      <div><h2 class="display">動画のご相談はお気軽に</h2><p>まずは今の発信や、動画で実現したいことをお聞かせください。</p></div>
+      <div class="contact-info">
+        <div class="c-row"><span class="c-label">MAIL</span><a class="c-value" href="mailto:stpr.888@gmail.com">stpr.888@gmail.com</a></div>
+        <div class="c-row"><span class="c-label">TEL</span><a class="c-value" href="tel:08046164062">080-4616-4062</a></div>
+      </div>
+    </div>
+  </section>
+  <footer><span>© 2026 Shintaro Kanaya</span><span class="mono">EDIT / MOTION / SHORT-FORM</span></footer>
+</div>
+</body></html>
